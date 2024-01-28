@@ -1,0 +1,34 @@
+@keyframes imageEffect {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textEffect {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .imageEffect {
+    animation: imageEffect 1s ease-in-out;
+  }
+  
+  .textEffect {
+    animation: textEffect 1s ease-in-out;
+  }
+  
+  .fontCursive {
+    font-family: cursive;
+  }
+  
