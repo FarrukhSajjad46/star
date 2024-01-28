@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from '/Users/Farrukh Sajjad/Desktop/star/star/styles/nextpage.module.css'; // Make sure to adjust the path based on your project structure
+import Style from "@/component/Style/nextpage.module.css" // Make sure to adjust the path based on your project structure
 
 interface nextPageProps {
   documentHeading: string;
@@ -34,7 +34,7 @@ const NextPage: React.FC<nextPageProps> = ({ documentHeading }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={Style.container}>
       <h1>{documentHeading}</h1>
       <h1>Next.Js</h1>
       <p>
@@ -42,18 +42,18 @@ const NextPage: React.FC<nextPageProps> = ({ documentHeading }) => {
         create a fast, Full Stack web application.
       </p>
       <h2>Building Blocks of web application</h2>
-      <div className={styles.translationsContainer}>
+      <div className={Style.translationsContainer}>
         <p>
           There are a few things you need to consider when building modern
           applications. Such as:
         </p>
         {Object.keys(translations).map((sentence) => (
-          <div key={sentence} className={styles.sentenceContainer} onClick={() => handleClick(sentence)}>
-            <p className={styles.englishSentence}>
-              <span className={styles.bold}>{sentence.split(' ')[0]}</span> {sentence.slice(sentence.indexOf(' ') + 1)}
+          <div key={sentence} className={Style.sentenceContainer} onClick={() => handleClick(sentence)}>
+            <p className={Style.englishSentence}>
+              <span className={Style.bold}>{sentence.split(' ')[0]}</span> {sentence.slice(sentence.indexOf(' ') + 1)}
             </p>
             {sentence === selectedSentence && (
-              <p className={styles.urduTranslation}>{translations[selectedSentence]}</p>
+              <p className={Style.urduTranslation}>{translations[selectedSentence]}</p>
             )}
           </div>
         ))}

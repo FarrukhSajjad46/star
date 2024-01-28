@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from '/Users/Farrukh Sajjad/Desktop/star/star/styles/namepage.module.css'; // Import your CSS file
+import Style from "@/component/Style/namepage.module.css" // Import your CSS file
 
 const Page = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <figure className={`bg-slate-100 rounded-xl p-8 dark:bg-slate-800 ${styles.dynamicEffect}`}>
-        <div className={`flex flex-row-reverse md:flex-row w-full md:w-auto ${styles.imageEffect}`}>
+      <figure className={`bg-slate-100 rounded-xl p-8 dark:bg-slate-800 ${Style.dynamicEffect}`}>
+        <div className={`flex flex-row-reverse md:flex-row w-full md:w-auto ${Style.imageEffect}`}>
           <div className="w-80 h-80 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto overflow-hidden">
             <Image
               className="object-cover w-full h-full"
@@ -17,7 +17,7 @@ const Page = () => {
             />
           </div>
         </div>
-        <div className={`pt-6 md:p-8 text-center md:text-left space-y-4 ${styles.textEffect} ${styles.fontCursive}`}>
+        <div className={`pt-6 md:p-8 text-center md:text-left space-y-4 ${Style.textEffect} ${Style.fontCursive}`}>
           <blockquote>
             <p className="text-lg font-medium">
               “Tailwind CSS is the only framework that I have seen scale
