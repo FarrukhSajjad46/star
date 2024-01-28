@@ -1,12 +1,12 @@
 // Page.tsx
 'use client'
 import React, { useState } from 'react';
-import Image from 'next/image';
+
 import Link from 'next/link';
 import './globals.css';
 
 const Page = () => {
-  const [selectedDocument, setSelectedDocument] = useState<string | null>(null);
+  const [,setSelectedDocument] = useState<string | null>(null);
 
   const handleDocumentClick = (documentName: string) => {
     setSelectedDocument(documentName);
@@ -32,13 +32,7 @@ const Page = () => {
   );
 };
 
-const LogoComponent: React.FC = () => {
-  return (
-    <div className="logo">
-      <Image src="/logo.png" alt="Logo" />
-    </div>
-  );
-};
+
 
 export default Page;
-export { LogoComponent };
+

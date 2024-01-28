@@ -6,6 +6,7 @@ import Footer from '@/component/Footer/Footer'
 
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
