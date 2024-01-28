@@ -1,9 +1,7 @@
 // Page.tsx
 'use client'
 import React, { useState } from 'react';
-
 import Link from 'next/link';
-import './globals.css';
 
 const Page = () => {
   const [,setSelectedDocument] = useState<string | null>(null);
